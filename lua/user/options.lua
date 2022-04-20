@@ -17,6 +17,7 @@ local options = {
   splitbelow = true,
   splitright = true,
   swapfile = false,
+  termguicolors = true,
   backup = false,
   timeoutlen = 1000,
   undofile = true,

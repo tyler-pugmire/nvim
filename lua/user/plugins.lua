@@ -38,6 +38,12 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
 
+  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/darkplus.nvim"
+  use "lunarvim/onedarker.nvim"
+  use "folke/tokyonight.nvim"
+  
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
