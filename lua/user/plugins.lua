@@ -36,6 +36,7 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim"
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
+  use "windwp/nvim-autopairs"
 
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
@@ -59,6 +60,12 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer"
 
   use "nvim-telescope/telescope.nvim"
+
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
