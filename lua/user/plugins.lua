@@ -45,6 +45,8 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "lunarvim/onedarker.nvim"
   use "folke/tokyonight.nvim"
+  use "navarasu/onedark.nvim"
+  use "wuelnerdotexe/vim-enfocado"
 
     -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

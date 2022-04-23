@@ -1,6 +1,12 @@
-vim.g.tokyonight_style = "night"
+require "user.themes.tokyonight_settings"
+require "user.themes.onedark_settings"
+require "user.themes.enfocado_settings"
 
-local colorscheme = "tokyonight"
+-- local colorscheme = "tokyonight"
+local colorscheme = "onedarker"
+-- local colorscheme = "darkplus"
+-- local colorscheme = "onedark"
+-- local colorscheme = "enfocado"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
