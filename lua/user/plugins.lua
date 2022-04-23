@@ -37,6 +37,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
   use "windwp/nvim-autopairs"
+  use "numToStr/Comment.nvim"
 
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
@@ -65,6 +66,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "JoosepAlviste/nvim-ts-context-commentstring"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
