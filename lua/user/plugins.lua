@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "navarasu/onedark.nvim"
   use "wuelnerdotexe/vim-enfocado"
+  use "mofiqul/vscode.nvim"
 
     -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -82,6 +83,8 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   use "lewis6991/gitsigns.nvim"
+  
+  --TODO: https://github.com/SmiteshP/nvim-gps
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
