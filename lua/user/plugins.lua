@@ -106,7 +106,10 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
   
   --TODO: https://github.com/SmiteshP/nvim-gps
-
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  }
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
