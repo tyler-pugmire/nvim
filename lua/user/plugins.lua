@@ -66,26 +66,12 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-  -- use {
-  --   "tzachar/cmp-tabnine",
-  --   config = function()
-  --     local tabnine = require "cmp_tabnine.config"
-  --     tabnine:setup {
-  --       max_lines = 1000,
-  --       max_num_results = 20,
-  --       sort = true,
-  --       run_on_every_keystroke = true,
-  --       snippet_placeholder = "..",
-  --       ignored_file_types = { -- default is not to ignore
-  --         -- uncomment to ignore in lua:
-  --         -- lua = true
-  --       },
-  --     }
-  --   end,
-  --
-  --   run = "./install.ps1",
-  --   requires = "hrsh7th/nvim-cmp",
-  -- }
+  use {
+    'tzachar/cmp-tabnine',
+    after = "nvim-cmp",
+    -- run='powershell ./install.ps1',
+    requires = 'hrsh7th/nvim-cmp'
+  }
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -104,8 +90,13 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   use "lewis6991/gitsigns.nvim"
-  
-  --TODO: https://github.com/SmiteshP/nvim-gps
+
+  use { "christianchiarulli/nvim-gps", branch = "text_hl" }
+  use "christianchiarulli/JABS.nvim"
+  use "github/copilot.vim"
+
+  use "mhartington/formatter.nvim"
+
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
