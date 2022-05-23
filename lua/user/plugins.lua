@@ -49,6 +49,8 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim"
   use "folke/which-key.nvim"
+  use "filipdutescu/renamer.nvim"
+  -- use "windwp/nvim-spectre"
 
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"

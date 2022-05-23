@@ -22,4 +22,5 @@ require "user.gps"
 require "user.winbar"
 require "user.jabs"
 require "user.copilot"
-
+require "user.renamer"
+-- require "user.spectre"
