@@ -103,6 +103,19 @@ return packer.startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   }
+
+  use "juancampa/solvent.vim"
+  --use "tyler-pugmire/vs-solution.nvim"
+  -- use "G:\\Github\\vs-solution.nvim"
+
+  use {
+    "ur4ltz/surround.nvim",
+    config = function()
+      require"surround".setup {mappings_style = "surround"}
+    end
+  }
+
+
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
