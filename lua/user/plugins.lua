@@ -115,6 +115,11 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    'jakemason/ouroboros',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()

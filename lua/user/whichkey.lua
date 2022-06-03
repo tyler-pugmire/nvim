@@ -160,6 +160,7 @@ local mappings = {
       "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
       "Workspace Symbols",
     },
+    v = { "<cmd>Ouroboros<cr>", "Switch to Header/Source" }
   },
   s = {
     name = "Search",
@@ -171,7 +172,7 @@ local mappings = {
     R = { "<cmd>Telescope registers<cr>", "Registers" },
     k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
     C = { "<cmd>Telescope commands<cr>", "Commands" },
-    s = { "<cmd>lua require('spectre').open()<cr>" }
+    s = { "<cmd>lua require('spectre').open()<cr>" },
   },
 
   t = {
