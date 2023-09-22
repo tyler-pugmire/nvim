@@ -57,6 +57,21 @@ return {
                     { name = 'nvim_lsp' },
                     { name = 'luasnip' },
                 },
+                window = {
+                    border = { '╭', '─', '╮', '|', '╯', '─', '╰', '|' },
+                    scrollbar = true,
+                    winhighlight = 'Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None',
+                    completion = {
+                        border = { '╭', '─', '╮', '│', '╯', '─', '╰', '│' },
+                        scrollbar = true,
+                        winhighlight = 'Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None'
+                    },
+                    documentation = {
+                        border = { '┌', '─', '┐', '│', '┘', '─', '└', '│' },
+                        scrollbar = true,
+                        winhighlight = 'Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None'
+                    }
+                },
             }
         end,
     },
