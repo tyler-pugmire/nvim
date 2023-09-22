@@ -1,4 +1,4 @@
-require "impatient".enable_profile()
-require "plugins"
-require "options"
 require "keymaps"
+require "plugin_loader"
+require "options"
+require "theme"

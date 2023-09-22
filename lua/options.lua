@@ -1,4 +1,5 @@
 -- :help options
+--[[
 local options = {
   backup = false,                          -- create a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -24,7 +25,7 @@ local options = {
   expandtab = true,
   shiftwidth = 2,
   tabstop = 2,
-  cursorline = true,
+  cursorline = false,
   number = true,
   relativenumber = false,
   numberwidth = 4,
@@ -35,11 +36,37 @@ local options = {
   guifont = "monospace:h17",
 }
 
-vim.opt.shortmess:append "c"
+--]]
 
-for k, v in pairs(options) do
-  vim.opt[k] = v
-end
+vim.opt.backup           = false
+vim.opt.clipboard        = "unnamedplus"
+vim.opt.completeopt      = { 'menu', 'menuone', 'noselect' }
+vim.opt.ignorecase       = true
+vim.opt.hlsearch         = true
+vim.opt.mouse            = 'a'
+vim.opt.showmode         = false
+vim.opt.showtabline      = 2
+vim.opt.smartcase        = true
+vim.opt.smartindent      = true
+vim.opt.splitright       = true
+vim.opt.splitbelow       = true
+vim.opt.swapfile         = false
+vim.opt.timeoutlen       = 500
+vim.opt.undofile         = true
+vim.opt.writebackup      = false
+vim.opt.expandtab        = true
+vim.opt.shiftwidth       = 4
+vim.opt.tabstop          = 4
+vim.opt.cursorline       = true
+vim.opt.number           = true
+vim.opt.relativenumber   = false
+vim.opt.signcolumn       = 'yes:1'
+vim.opt.wrapmargin       = 0
+vim.opt.termguicolors    = true
+vim.g.loaded_netrw       = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.opt.shortmess:append { c = true, S = true }
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
