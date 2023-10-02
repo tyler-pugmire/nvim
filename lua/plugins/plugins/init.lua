@@ -18,4 +18,13 @@ return {
         event = "InsertEnter",
         opts = {}
     },
+    {
+        'xiyaowong/nvim-transparent',
+        opts = {
+            extra_groups = {
+                "NormalFloat",
+                "NvimTreeNormal"
+            }
+        }
+    }
 }

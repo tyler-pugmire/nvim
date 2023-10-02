@@ -41,7 +41,7 @@ local servers = {
     clangd = {
         -- filetypes = { ".cpp", ".c", "h", ".hpp" }
     },
-    --gopls = {},
+    gopls = {},
     pyright = {},
     rust_analyzer = {},
     lua_ls = {

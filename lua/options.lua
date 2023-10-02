@@ -71,3 +71,9 @@ vim.opt.shortmess:append { c = true, S = true }
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODOL this doesn't seem to work
+
+-- vim.api.nvim_create_augroup("UserColors", { clear = true });
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--     command = "highlight Normal ctermbg=NONE guibg=NONE",
+--     group = "UserColors"
+-- })
