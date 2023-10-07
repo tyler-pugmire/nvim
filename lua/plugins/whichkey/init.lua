@@ -79,7 +79,14 @@ local mappings = {
         "<cmd>lua require('telescope.builtin').find_files()<cr>",
         "Find files"
     },
-    t = { "<CMD>lua require('FTerm').toggle()<CR>", "Terminal" }
+    t = { "<CMD>lua require('FTerm').toggle()<CR>", "Terminal" },
+    g = {
+        name = "Git",
+        g = {
+            "<CMD>LazyGit<CR>",
+            "LazyGit"
+        }
+    }
 }
 
 return {
